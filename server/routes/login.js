@@ -10,7 +10,7 @@ const client = new OAuth2Client(process.env.CLIENT_ID);
 
 
 app.post('/login', (req, res) => {
-
+    console.log("entro a validar");
     let body = req.body;
 
     Usuario.findOne({ email: body.email }, (err, usurioDB) => {
@@ -37,16 +37,17 @@ app.post('/login', (req, res) => {
                 }
             });
         }
-
+        console.log("creare token");
         let token = jwt.sign({ //creando token
                 usuario: usurioDB //definiendo paidload
             }, process.env.SEED, { expiresIn: process.env.CADUCIDAD_TOKEN }) //primero semilla y la expiracion esta en segundos*minutos*horas*dias
-
+        console.log(token);
         res.json({
             ok: true,
             usuario: usurioDB,
             token
         });
+
 
     });
 
