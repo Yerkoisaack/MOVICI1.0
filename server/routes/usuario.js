@@ -50,6 +50,8 @@ app.get('/usuario', verificaToken, (req, res) => {
 
 
 app.post('/usuario', (req, res) => {
+    console.log('recivo usuaio');
+    console.log("problema aqui");
 
     let body = req.body;
     let usuario = new Usuario();

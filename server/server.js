@@ -67,7 +67,27 @@ app.get('/register', (req, res) => {
 
     });
 });
+app.get('/catalogo', (req, res) => {
 
+    res.render('catalogo', {
+        nombre: 'Yerko Sanhueza goDOY',
+
+    });
+});
+app.get('/pedido', (req, res) => {
+
+    res.render('pedido', {
+        nombre: 'Yerko Sanhueza goDOY',
+
+    });
+});
+app.get('/arriendos', (req, res) => {
+
+    res.render('arriendos', {
+        nombre: 'Yerko Sanhueza goDOY',
+
+    });
+});
 
 
 

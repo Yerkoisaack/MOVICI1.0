@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--INICIO DEL HEAD-->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MOVICI-Mi Carro de Compras</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css agregar aca -->
+
+
+  <!-- End plugin css aca se acaban loco -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/core-style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<!--FIN DEL HEAD-->
+
+<!--INICIA EL BODY -->
+<body>
+  <div class="container-scroller">
+<!-- Primera barra (incluye login) NO BORRAR -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+  <!--mira mira cambiar logo para el inicio del home-->
+        <a class="navbar-brand brand-logo" href="index.html">
+          <img src="images/logo.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+        </ul>
+
+<!---BANNER-->
+
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            
+
+
+
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+
+
+<!-- PESTAÑA NOTIFICACIONES-->
+          <li class="nav-item dropdown">
+           
+          </li>
+
+
+<!-- -->
+
+<!-- PESTAÑA USER -->
+
+
+          <li class="nav-item dropdown d-none d-xl-inline-block">
+            <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <span class="profile-text">Bienvenido a Movici <!-- AGREGAR NOMBRE POR PARAMETRO--></span>
+              <img class="img-xs rounded-circle" src="images/faces/face1.jpg" alt="Profile image">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+
+              <a class="dropdown-item mt-2">
+                Vincular
+              </a>
+              <a class="dropdown-item">
+                Configuración
+              </a>
+              <a class="dropdown-item" href="/">
+                Cerrar sesión
+              </a>
+            </div>
+          </li>
+        </ul>
+
+
+<!-- FIN BANNER -->
+
+
+
+<!--BOTON HOME-->
+
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+<!-- INICIO DE LA BARRA IZQUIERDA(SIN ESTO SE VA A LA B') -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <!-- USADO COMO ESPACIO-->
+              </div>
+<!--BOTON VERDE PARA PEDIR LA CLETA LOCO -->
+
+              <button class="btn btn-success btn-block" onclick="RutaMiCatalogo();">PIDE TU BICICLETA
+                <i class="mdi mdi-plus" ></i>
+                
+              </button>
+            </div>
+          </li>
+<!--BARRA IZQUIERDA-->
+          <li class="nav-item">
+            <button onclick="RutaMiPerfil();" class="btn btn-block btn-muted">
+              <a class="nav-link" > Mi Perfil </a>
+            </button>
+          </li>
+          </li>
+          <li class="nav-item">
+            <button onclick="RutaMiPerfil();" class="btn btn-block btn-muted">
+              <a class="nav-link" > Sucursales </a>
+            </button>
+          </li>
+          </li>
+          <li class="nav-item">
+            <button onclick="RutaMiArriendo();" class="btn btn-block btn-muted">
+              <a class="nav-link" > Mi Perfil </a>
+            </button>
+          </li>
+          </li>
+          <li class="nav-item">
+            <button onclick="RutaMiCatalogo();" class="btn btn-block btn-muted">
+              <a class="nav-link" > Catalogo</a>
+            </button>
+            
+          </li>
+          </li>
+          <li class="nav-item">
+            <button onclick="RutaMiPerfil();" class="btn btn-block btn-muted">
+              <a class="nav-link" > Ajustes </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+
+
+<!--DASHBOARD INTERNO-->
+
+<!-- INICIO DEL DASHBOARD +MENSAJE Y BOTON DESLIZANTE -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row purchace-popup">
+            <div class="col-12">
+              <span class="d-block d-md-flex align-items-center">
+                <p>Bienvenido .</p>
+                <a class="btn ml-auto download-button d-none d-md-block" href="pages/samples/sucursales.html" target="_blank">Sucursal?</a>
+                
+                <i class="mdi mdi-close popup-dismiss d-none d-md-block"></i>
+              </span>
+            </div>
+          </div>
+
+<!--inicio de los cuadrados mas el mov -->
+
+
+<!-- Product Catagories Area Start -->
+<!--Carro de compras -->            
+       
+        <div class="products-catagories-area clearfix">
+            <div class="amado-pro-catagory clearfix">
+                      <div class="cart-table-area section-padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="cart-title mt-50">
+                            <h2>MI CARRO DE COMPRAS</h2>
+                        </div>
+
+                        <div class="cart-table clearfix">
+                            <table class="table table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Bicicleta</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+
+                                    <tr>
+                                        <td class="cart_product_img">
+                                            <a href="#"><img src="img/bg-img/1.jpg" alt="Product"></a>
+                                        </td>
+                                        <td class="cart_product_desc">
+                                            <h5>Bicicleta Marlin 7 Roja</h5>
+                                        </td>
+                                        <td class="price">
+                                            <span>$130</span>
+                                        </td>
+                                        <td class="qty">
+                                            <div class="qty-btn d-flex">
+                                                <p>Cantidad</p>
+                                                <!--Cantidad -->
+                                                <div class="quantity">
+                                                    <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    <input type="number" class="qty-text" id="qty" step="1" min="1" max="300" name="quantity" value="1">
+                                                    <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                                    <tr>
+                                        <td class="cart_product_img">
+                                            <a href="#"><img src="img/bg-img/cart2.jpg" alt="Product"></a>
+                                        </td>
+                                        <td class="cart_product_desc">
+                                            <h5>Bicicleta Marlin 7 Roja</h5>
+                                        </td>
+                                        <td class="price">
+                                            <span>$10</span>
+                                        </td>
+                                        <td class="qty">
+                                            <div class="qty-btn d-flex">
+                                                <p>Cantidad</p>
+                                                <div class="quantity">
+                                                    <span class="qty-minus" onclick="var effect = document.getElementById('qty2'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    <input type="number" class="qty-text" id="qty2" step="1" min="1" max="300" name="quantity" value="1">
+                                                    <span class="qty-plus" onclick="var effect = document.getElementById('qty2'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="cart_product_img">
+                                            <a href="#"><img src="img/bg-img/cart3.jpg" alt="Product"></a>
+                                        </td>
+                                        <td class="cart_product_desc">
+                                            <h5>Bicicleta Marlin 7 Roja</h5>
+                                        </td>
+                                        <td class="price">
+                                            <span>$10</span>
+                                        </td>
+                                        <td class="qty">
+                                            <div class="qty-btn d-flex">
+                                                <p>Cantidad</p>
+                                                <div class="quantity">
+                                                    <span class="qty-minus" onclick="var effect = document.getElementById('qty3'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    <input type="number" class="qty-text" id="qty3" step="1" min="1" max="300" name="quantity" value="1">
+                                                    <span class="qty-plus" onclick="var effect = document.getElementById('qty3'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="cart-summary">
+
+
+                            <h5>Total Carro de Compras</h5>
+                            <ul class="summary-table">
+                                <!--Espacio para la tabla -->
+                                <li><span>subtotal:</span> <span>$140.000</span></li>
+                                <li><span>costo otro:</span> <span>Gratis</span></li>
+                                <li><span>total:</span> <span>$140.000</span></li>
+                            </ul>
+                            <div class="cart-btn mt-100">
+                                <a href="cart.html" class="btn amado-btn w-100">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+      <footer class="footer">
+        <div class="container-fluid clearfix">
+          <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
+            <a href="" target="_blank">Mobicycle</a>. All rights reserved.</span>
+          
+         </div>
+      </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -17,19 +17,19 @@
 
   <!-- End plugin css aca se acaban loco -->
   <!-- inject:css -->
+  <link rel="stylesheet" href="css/core-style.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <!--FIN DEL HEAD-->
 
-<!--INICIA EL BODY -->
+
 <body>
-  <div class="container-scroller">
-<!-- Primera barra (incluye login) NO BORRAR -->
+
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-  <!--mira mira cambiar logo para el inicio del home-->
+
         <a class="navbar-brand brand-logo" href="index.html">
           <img src="images/logo.svg" alt="logo" />
         </a>
@@ -37,151 +37,9 @@
       <div class="navbar-menu-wrapper d-flex align-items-center">
         <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
         </ul>
-
-<!---BANNER-->
-
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <i class="mdi mdi-file-document-box"></i>
-              <span class="count">7</span>
-            </a>
-
-
-
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-
-<!--PESTAÑA MENSAJE-->
-
-              <div class="dropdown-item">
-                <p class="mb-0 font-weight-normal float-left">You have 7 unread mails
-                </p>
-                <span class="badge badge-info badge-pill float-right">View all</span>
-              </div>
-
-              <div class="dropdown-divider"></div>
-
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
-                </div>
-                <!-- 1MENSAJE-->
-
-
-
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">David Grey
-                    <span class="float-right font-weight-light small-text">1 Minutes ago</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    The meeting is cancelled
-                  </p>
-                </div>
-              </a>
-              <!-- 2MENSAJE-->
-
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">Tim Cook
-                    <span class="float-right font-weight-light small-text">15 Minutes ago</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    New product launch
-                  </p>
-                </div>
-              </a>
-              <!-- 3MENSAJE-->
-
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark"> Johnson
-                    <span class="float-right font-weight-light small-text">18 Minutes ago</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    Upcoming board meeting
-                  </p>
-                </div>
-              </a>
-            </div>
-          </li>
-<!-- -->
-
-
-<!-- PESTAÑA NOTIFICACIONES-->
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-bell"></i>
-              <span class="count">4</span>
-            </a>
-
-
-
-
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-              <a class="dropdown-item">
-                <p class="mb-0 font-weight-normal float-left">You have 4 new notifications
-                </p>
-                <span class="badge badge-pill badge-warning float-right">View all</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success">
-                    <i class="mdi mdi-alert-circle-outline mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-medium text-dark">Application Error</h6>
-                  <p class="font-weight-light small-text">
-                    Just now
-                  </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-warning">
-                    <i class="mdi mdi-comment-text-outline mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-medium text-dark">Settings</h6>
-                  <p class="font-weight-light small-text">
-                    Private message
-                  </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-info">
-                    <i class="mdi mdi-email-outline mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-medium text-dark">New user registration</h6>
-                  <p class="font-weight-light small-text">
-                    2 days ago
-                  </p>
-                </div>
-              </a>
-            </div>
-          </li>
-
-
-<!-- -->
-
-<!-- PESTAÑA USER -->
-
-
+            
           <li class="nav-item dropdown d-none d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
               <span class="profile-text">Bienvenido a Movici <!-- AGREGAR NOMBRE POR PARAMETRO--></span>
@@ -203,228 +61,185 @@
         </ul>
 
 
-<!-- FIN BANNER -->
-
-
-
-<!--BOTON HOME-->
 
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
         </button>
       </div>
     </nav>
+    <!-- Search Wrapper Area Start -->
+    
+    <!-- Search Wrapper Area End -->
 
-<!-- INICIO DE LA BARRA IZQUIERDA(SIN ESTO SE VA A LA B') -->
-    <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
-          <li class="nav-item nav-profile">
-            <div class="nav-link">
-              <div class="user-wrapper">
-                <!-- USADO COMO ESPACIO-->
-              </div>
-<!--BOTON VERDE PARA PEDIR LA CLETA LOCO -->
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
 
-              <button class="btn btn-success btn-block">PIDE TU BICICLETA
-                <i class="mdi mdi-plus"></i>
-              </button>
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="amado-navbar-brand">
+                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
             </div>
-          </li>
-<!--BARRA IZQUIERDA-->
-          <li class="nav-item">
-            <a class="nav-link" href="Movici-Mi Perfil.html"> MI PERFIL </a>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Movici-sucursales.html"> Sucursales </a>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Movici-Mis Arriendos.html"> Mis Arriendos </a>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Movici-Arrendar.html"> Catalogo </a>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Movici-Ajustes.html"> Ajustes </a>
-          </li>
-        </ul>
-      </nav>
-
-
-<!--DASHBOARD INTERNO-->
-
-<!-- INICIO DEL DASHBOARD +MENSAJE Y BOTON DESLIZANTE -->
-      <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="row purchace-popup">
-            <div class="col-12">
-              <span class="d-block d-md-flex align-items-center">
-                <p>Bienvenido .</p>
-                <a class="btn ml-auto download-button d-none d-md-block" href="pages/samples/sucursales.html" target="_blank">Sucursal?</a>
-                
-                <i class="mdi mdi-close popup-dismiss d-none d-md-block"></i>
-              </span>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
             </div>
-          </div>
-
-<!--inicio de los cuadrados mas el mov -->
-
-          <div class="row">
-<!--Cuadrados usar para meter las cletas loco wom -->            
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-              <div class="card card-statistics">
-                <div class="card-body">
-
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <i class="mdi mdi-cube text-danger icon-lg"></i>
+        </div>
+        <!-- Header Area Start -->
+        <header class="header-area clearfix">
+            <!-- Close Icon -->
+            <div class="nav-close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+              <ul class="nav">
+                <li class="nav-item nav-profile">
+                  <div class="nav-link">
+                    <div class="user-wrapper">
+                      <!-- USADO COMO ESPACIO-->
                     </div>
+                     <!--BOTON VERDE PARA PEDIR LA CLETA LOCO -->
+                    <button class="btn btn-success btn-block">PIDE TU BICICLETA
+                      <a class="nav-link" href="Movici-Catalogo.html"></a>
+                    </button>
                     
-
-
-                    <div class="float-right">
-                      <p class="mb-0 text-right">Total Revenue</p>
-                      <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">$65,650</h3>
-                      </div>
-                    </div>
                   </div>
+                </li>
+                 <!--BARRA IZQUIERDA-->
+                <li class="nav-item">
+                  <a class="nav-link" href="Movici-Mi Perfil.html"> MI PERFIL </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Movici-sucursales.html"> Sucursales </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Movici-Mis Arriendos.html"> Mis Reservas </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Movici-Catalogo.html"> Catalogo </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Movici-Ajustes.html"> Ajustes </a>
+                </li>
+              </ul>
+            </nav>
+        </header>
+        <!-- Header Area End -->
 
 
-                  <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 65% lower growth
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
-<!--Cuadrados usar para meter las cletas loco wom -->            
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-              <div class="card card-statistics">
-                <div class="card-body">
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <i class="mdi mdi-receipt text-warning icon-lg"></i>
-                    </div>
-                    <div class="float-right">
-                      <p class="mb-0 text-right">Orders</p>
-                      <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">3455</h3>
-                      </div>
-                    </div>
+        <!-- Product Catagories Area Start -->
+        <div class="products-catagories-area clearfix">
+            <div class="amado-pro-catagory clearfix">
+                  <!-- cuadros1 -->
+                  <div class="single-products-catagory clearfix">
+                      <a href="Movici-pedido.html">
+                          <img src="img/bg-img/marlin5a.jpg" alt="">
+                          <!-- Hover Content -->
+                          <div class="hover-content">
+                              <div class="line"></div>
+                              <p>Marlin 5$</p>
+                              <h4>Discos de Freno $</h4>
+                          </div>
+                      </a>
                   </div>
-                  <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i> Product-wise sales
-                  </p>
-                </div>
-              </div>
-            </div>
-<!--Cuadrados usar para meter las cletas loco wom -->               
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-              <div class="card card-statistics">
-                <div class="card-body">
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <i class="mdi mdi-poll-box text-success icon-lg"></i>
-                    </div>
-                    <div class="float-right">
-                      <p class="mb-0 text-right">Sales</p>
-                      <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">5693</h3>
-                      </div>
-                    </div>
+                  <!-- cuadros2 -->
+                  <div class="single-products-catagory clearfix">
+                      <a href="Movici-pedido.html">
+                          <img src="img/bg-img/marlin5b.jpg" alt="">
+                          <!-- Hover Content -->
+                          <div class="hover-content">
+                              <div class="line"></div>
+                              <p>Marlin 5$</p>
+                              <h4>Discos de Freno $</h4>
+                          </div>
+                      </a>
                   </div>
-                  <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-calendar mr-1" aria-hidden="true"></i> Weekly Sales
-                  </p>
-                </div>
-              </div>
-            </div>
-<!--Cuadrados usar para meter las cletas loco wom -->   
-
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-              <div class="card card-statistics">
-                <div class="card-body">
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <i class="mdi mdi-account-location text-info icon-lg"></i>
-                    </div>
-                    <div class="float-right">
-                      <p class="mb-0 text-right">Employees</p>
-                      <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">246</h3>
-                      </div>
-                    </div>
+                  <!-- cuadros3 -->
+                  <div class="single-products-catagory clearfix">
+                      <a href="Movici-pedido.html">
+                          <img src="img/bg-img/marlin6a.jpg" alt="">
+                          <!-- Hover Content -->
+                          <div class="hover-content">
+                              <div class="line"></div>
+                              <p>Marlin 6$</p>
+                              <h4>Discos de Freno $</h4>
+                          </div>
+                      </a>
                   </div>
-                  <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-reload mr-1" aria-hidden="true"></i> Product-wise sales
-                  </p>
-                </div>
+                  <!-- cuadros4 -->
+                  <div class="single-products-catagory clearfix">
+                      <a href="Movici-pedido.html">
+                          <img src="img/bg-img/marlin6b.jpg" alt="">
+                          <!-- Hover Content -->
+                          <div class="hover-content">
+                              <div class="line"></div>
+                              <p>Marlin 6$</p>
+                              <h4>Discos de Freno $</h4>
+                          </div>
+                      </a>
+                  </div>
+                  <!-- cuadros5 -->
+                  <div class="single-products-catagory clearfix">
+                      <a href="Movici-pedido.html">
+                          <img src="img/bg-img/marlin7a.jpg" alt="">
+                          <!-- Hover Content -->
+                          <div class="hover-content">
+                              <div class="line"></div>
+                              <p>Marlin 7$</p>
+                              <h4>Discos de Freno $</h4>
+                          </div>
+                      </a>
+                  </div>
+                  <!-- cuadros6 -->
+                  <div class="single-products-catagory clearfix">
+                      <a href="Movici-pedido.html">
+                          <img src="img/bg-img/marlin7b.jpg" alt="">
+                          <!-- Hover Content -->
+                          <div class="hover-content">
+                              <div class="line"></div>
+                              <p>Marlin 7$</p>
+                              <h4>Discos de Freno $</h4>
+                          </div>
+                      </a>
+                  </div>
               </div>
-            </div>
-          </div>
-<!--FINAL DE LOS CUADRADOS-->   
+        </div>
+        <!-- Product Catagories Area End -->
 
 
 
-        <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
-      <footer class="footer">
-        <div class="container-fluid clearfix">
-          <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
-            <a href="" target="_blank">Mobicycle</a>. All rights reserved.</span>
-          
-         </div>
-      </footer>
-        <!-- partial -->
-      </div>
-      <!-- main-panel ends -->
+
     </div>
-    <!-- page-body-wrapper ends -->
-  </div>
-  <!-- container-scroller -->
 
-  <!-- plugins:js -->
-  <script src="vendors/js/vendor.bundle.base.js"></script>
-  <script src="vendors/js/vendor.bundle.addons.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page-->
-  <!-- End plugin js for this page-->
-  <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/misc.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="js/dashboard.js"></script>
-  <!-- End custom js for this page-->
+    <footer class="footer_area clearfix">
+
+        <nav class="navbar navbar-expand-lg justify-content-end">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        </nav>
+ 
+    </footer>
+
+ 
+                        <!-- Footer Menu -->
+                        
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>

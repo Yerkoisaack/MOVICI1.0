@@ -23,12 +23,20 @@ async function iniciar() {
             // Formato de datos que se espera en la respuesta
             dataType: "json",
             // URL a la que se enviará la solicitud Ajax
-            url: "/login",
+            url: "/logini",
         })
         .done(function(data, textStatus, jqXHR) {
+            alert(' realiza hacer el login')
             renderizar(data.usuario, data.token);
         }).fail(function(jqXHR, textStatus, errorThrown) {
-            //alert('Incorrecta llamada');
+            console.log(jqXHR);
+            console.log("salto");
+            console.log(textStatus);
+            console.log("salto");
+            console.log(errorThrown);
+            console.log("salto");
+            alert('falla hacer el login')
+                //alert('Incorrecta llamada');
         });
 }
 
