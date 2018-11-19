@@ -26,6 +26,20 @@ function sumarDias(fecha, dias) {
 //var dias = "Cantidad de dias ingreso en el html por la q resevara la bicicleta "
 
 //POST para ver datos de bicicleta
+
+app.post('/misreservas', (req, res) => {
+    let body = req.body;
+    let iduser = body.iduser;
+    Reserva.find({ Idusuario: iduser }, (err, productos) => {
+        if (err) return res.status(500).send({ message: 'Error al realizar la petición' })
+        if (!productos) return res.status(484).send({ message: 'No existe el producto' })
+        res.send(200, { productos })
+
+
+    });
+
+});
+
 app.post('/DatosBicicleta', (req, res) => {
     let body = req.body;
     let bici = body.Bicicleta;
@@ -38,8 +52,9 @@ app.post('/DatosBicicleta', (req, res) => {
 
 
     });
-
 });
+
+
 app.post('/Reservar2', (req, res) => {
 
     let body = req.body;
