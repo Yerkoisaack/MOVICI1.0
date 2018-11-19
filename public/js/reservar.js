@@ -32,15 +32,15 @@ $.ajax({
 
 
     }).fail(function(jqXHR, textStatus, errorThrown) {
-        alert("no entra")
+
         console.log(jqXHR);
         console.log("salto");
         console.log(textStatus);
         console.log("salto");
         console.log(errorThrown);
         console.log("salto");
-        alert('falla hacer el login')
-            //alert('Incorrecta llamada');
+
+
     });
 
 
@@ -77,7 +77,7 @@ function ConfirmarReserva() {
     console.log(bicigeneral);
     console.log(nombregeneral);
     console.log(idusuariogeneral);
-    alert('entra');
+
 
     $.ajax({
             // En data puedes utilizar un objeto JSON, un array o un query string
@@ -99,14 +99,13 @@ function ConfirmarReserva() {
 
 
         }).fail(function(jqXHR, textStatus, errorThrown) {
-            alert("no entra")
+
             console.log(jqXHR);
             console.log("salto");
             console.log(textStatus);
             console.log("salto");
             console.log(errorThrown);
             console.log("salto");
-            alert('falla hacer el login')
-                //alert('Incorrecta llamada');
+
         });
 }

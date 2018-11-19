@@ -9,6 +9,7 @@ function registrar() {
     let cajacontrasena = document.getElementById('myDiv');
     let cajacorreo = document.getElementById('divCorreo');
     let cajacreado = document.getElementById('divCreado');
+    let desaparece = document.getElementById('desaparece');
 
     let cajacampo = document.getElementById('divCampo');
 
@@ -18,7 +19,7 @@ function registrar() {
         return 1;
     }
     let datoshtml = [nombre, telefono, correo, contrasena1];
-    console.log(datoshtml);
+
 
 
 
@@ -33,15 +34,16 @@ function registrar() {
                 // Formato de datos que se espera en la respuesta
                 dataType: "json",
                 // URL a la que se enviará la solicitud Ajax
-                url: "/usuario",
+                url: "/usuario1",
             })
             .done(function(data, textStatus, jqXHR) {
+
                 cajacampo.style.display = "none";
                 cajacorreo.style.display = "none";
                 cajacontrasena.style.display = "none";
-
                 cajacreado.style.display = "block";
-                console.log('usuario creado' + data);
+
+
             })
             .fail(function(jqXHR, textStatus, errorThrown) {
                 console.log('fallo usuario');
@@ -50,6 +52,7 @@ function registrar() {
 
 
             });
+
     } else {
         cajacontrasena.style.display = "block";
 

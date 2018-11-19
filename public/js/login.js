@@ -1,18 +1,5 @@
-// var http = require('http');
-// const path = require('path'); //para publicar la carpeta public
-
-// var option = {
-//     host: 'localhost',
-//     port: 80,
-//     path: '/dashboard'
-//     method: 'GET'
-// }
-// http.request(option, function(res) {
-
-// })
-
-
 async function iniciar() {
+    let failledes = document.getElementById('divCorreo');
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     $.ajax({
@@ -26,17 +13,12 @@ async function iniciar() {
             url: "/logini",
         })
         .done(function(data, textStatus, jqXHR) {
-            alert(' realiza hacer el login')
+
             renderizar(data.usuario, data.token);
         }).fail(function(jqXHR, textStatus, errorThrown) {
-            console.log(jqXHR);
-            console.log("salto");
-            console.log(textStatus);
-            console.log("salto");
-            console.log(errorThrown);
-            console.log("salto");
-            alert('falla hacer el login')
-                //alert('Incorrecta llamada');
+
+            failledes.style.display = "block";
+
         });
 }
 

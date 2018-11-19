@@ -49,9 +49,8 @@ app.get('/usuario', verificaToken, (req, res) => {
 
 
 
-app.post('/usuario', (req, res) => {
-    console.log('recivo usuaio');
-    console.log("problema aqui");
+app.post('/usuario1', (req, res) => {
+
 
     let body = req.body;
     let usuario = new Usuario();

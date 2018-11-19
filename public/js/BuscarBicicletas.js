@@ -30,15 +30,15 @@ $.ajax({
 
 
     }).fail(function(jqXHR, textStatus, errorThrown) {
-        alert("no entra")
+
         console.log(jqXHR);
         console.log("salto");
         console.log(textStatus);
         console.log("salto");
         console.log(errorThrown);
         console.log("salto");
-        alert('falla hacer el login')
-            //alert('Incorrecta llamada');
+
+
     });
 
 function datosUsuario(url) {

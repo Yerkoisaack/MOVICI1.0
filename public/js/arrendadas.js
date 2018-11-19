@@ -18,6 +18,12 @@ $.ajax({
 
         console.log(data);
 
+        for (i = 0; i < data.productos.length; i++) {
+
+
+            $('#agregarArriendos').append('<tr><th>' + data.productos[i].Idbicicleta + '</th><th>' + data.productos[i].Idsucursal + '</th> </tr> asdasdasdsadas');
+        }
+
         //resivo las cletas y las tengo que mostrar en el arriendos.hbs
 
         //acaaaaaaaaaaaaaaaaaaaa
@@ -29,15 +35,16 @@ $.ajax({
         //acaaaaaaaaaaaaaaaaaaaa
 
     }).fail(function(jqXHR, textStatus, errorThrown) {
-        alert("no entra")
+
+
         console.log(jqXHR);
         console.log("salto");
         console.log(textStatus);
         console.log("salto");
         console.log(errorThrown);
         console.log("salto");
-        alert('falla hacer el login')
-            //alert('Incorrecta llamada');
+
+
     });
 
 

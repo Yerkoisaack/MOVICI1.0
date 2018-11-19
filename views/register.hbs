@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="container-scroller">
+    <div class="container-scroller" id="desaparece">
         <div class="container-fluid page-body-wrapper full-page-wrapper auth-page">
             <div class="content-wrapper d-flex align-items-center auth register-bg-1 theme-one">
                 <div class="row w-100">
@@ -127,12 +127,7 @@
                                 </div>
 
                                 <div class="form-group" id="divCreado" style="display:none;">
-                                    <div class="input-group ">
-                                        <button class="btn btn-block btn-success">
-                                      Usuario creado
-                                    </button>
-
-                                    </div>
+                                    <div class="alert alert-info"><a href="/login" class="btn btn-xs btn-primary pull-right">Logear</a><br><strong>Info:</strong> Tu cuenta esta creada, ahora puedes logear</div>
                                 </div>
 
 
@@ -147,6 +142,8 @@
             </div>
             <!-- content-wrapper ends -->
         </div>
+
+
         <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
